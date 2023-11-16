@@ -27,6 +27,28 @@ function SignUpPage() {
       <div className="card-body">
         <form onSubmit={handleSubmit}>
           <h1 className="text-center">Sign Up</h1>
+           <Input
+            type="text"
+            label="First Name"
+            className="form-control"
+            name="firstName"
+            value={values.firstName}
+            error={errors.firstName}
+            touched={touched.firstName}
+            handleBlur={handleBlur}
+            handleChange={handleChange}
+          />
+          <Input
+            type="text"
+            label="Last Name"
+            className="form-control"
+            name="lastName"
+            value={values.lastName}
+            error={errors.lastName}
+            touched={touched.lastName}
+            handleBlur={handleBlur}
+            handleChange={handleChange}
+          />
           <Input
             type="email"
             label="Email"
