@@ -38,12 +38,6 @@ function HomePage() {
         <button className="btn btn-info" onClick={increaseCountHandler}>
           Increase count
         </button>
-        <button className="btn btn-info ms-1" onClick={decreaseCountHandler}>
-          Decrease count
-        </button>
-        <button className="btn btn-info ms-1" onClick={toggleCountHandler}>
-          Toggle count
-        </button>
       </div>
     </div>
   );
